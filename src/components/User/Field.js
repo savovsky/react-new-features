@@ -1,12 +1,18 @@
 import React from 'react';
 import { TextField } from '@material-ui/core';
 
+import LangContext from '../../contexts/LangContext'
+
 
 const Field = () => {
   return (
     <TextField
       id="outlined-name"
-      label="Name"
+      label={
+        <LangContext.Consumer>
+          {(value) => value === 'EN' ? 'Name' : 'Име'}
+        </LangContext.Consumer>
+      }
       // value={values.name}
       // onChange={handleChange('name')}
       margin="normal"
