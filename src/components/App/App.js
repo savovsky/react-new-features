@@ -5,8 +5,10 @@ import React from 'react';
 // import SongDetails from '../SongDetails/SongDetails';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
-import User from '../User/User';
-import NoteApp from '../NoteApp/NoteApp';
+// import User from '../User/User';
+// import NoteApp from '../NoteApp/NoteApp';
+import NoteAppContext from '../NoteAppContext/components/NoteAppContext';
+
 
 
 const App = () => {
@@ -23,8 +25,9 @@ const App = () => {
     // </div>
     <>
       <Header />
-      <User />
-      <NoteApp />
+      {/* <User /> */}
+      {/* <NoteApp /> */}
+      <NoteAppContext />
       <Footer />
     </>
   );
