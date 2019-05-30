@@ -6,7 +6,7 @@ import LangContext from '../../contexts/LangContext'
 class SubmitBtn extends Component {
   static contextType = LangContext;
 
-  getText = (lang) => {
+  btnText = (lang) => {
     return lang === 'EN' ? 'Submit' : 'Потвърди';
   }
 
@@ -16,7 +16,7 @@ class SubmitBtn extends Component {
         <Button
           variant="contained"
           color="primary"
-        >{this.getText(this.context)}
+        >{this.btnText(this.context.language)}
         </Button>
       </Box>
     );

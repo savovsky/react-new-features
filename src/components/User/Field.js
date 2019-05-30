@@ -10,7 +10,8 @@ const Field = () => {
       id="outlined-name"
       label={
         <LangContext.Consumer>
-          {(value) => value === 'EN' ? 'Name' : 'Име'}
+          {/* {(value) => value.language === 'EN' ? 'Name' : 'Име'} */}
+          {({language}) => language === 'EN' ? 'Name' : 'Име'}
         </LangContext.Consumer>
       }
       // value={values.name}

@@ -1,25 +1,31 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Button, Typography } from '@material-ui/core';
 
+import LangContext from '../../contexts/LangContext'
 
-const Language = (props) => {
-  return (
-    <div>
-      <Typography component="span">Select Language</Typography>
-        <Button
-          size="small"
-          variant="contained"
-          onClick={() => props.onLangChange('BG')}
-        >BG
-        </Button>
-        <Button
-          size="small"
-          variant="contained"
-          onClick={() => props.onLangChange('EN')}
-        >EN
-        </Button>
-    </div>
-  );
+
+class Language extends Component {
+  static contextType = LangContext;
+
+  render() {
+    return (
+      <div>
+        <Typography component="span">Select Language</Typography>
+          <Button
+            size="small"
+            variant="contained"
+            onClick={() => this.context.onLanguageChange('BG')}
+          >BG
+          </Button>
+          <Button
+            size="small"
+            variant="contained"
+            onClick={() => this.context.onLanguageChange('EN')}
+          >EN
+          </Button>
+      </div>
+    );
+  }
 };
   
 export default Language;
