@@ -6,6 +6,7 @@ import React from 'react';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import User from '../User/User';
+import NoteApp from '../NoteApp/NoteApp';
 
 
 const App = () => {
@@ -23,6 +24,7 @@ const App = () => {
     <>
       <Header />
       <User />
+      <NoteApp />
       <Footer />
     </>
   );
