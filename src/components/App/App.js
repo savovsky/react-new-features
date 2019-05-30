@@ -7,7 +7,7 @@ import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 // import User from '../User/User';
 // import NoteApp from '../NoteApp/NoteApp';
-import NoteAppContext from '../NoteAppContext/components/NoteAppContext';
+import NoteAppContext from '../NoteAppCustomHooks/components/NoteApp';
 
 
 
