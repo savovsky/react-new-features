@@ -7,7 +7,9 @@ import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 // import User from '../User/User';
 // import NoteApp from '../NoteApp/NoteApp';
-import NoteAppContext from '../NoteAppCustomHooks/components/NoteApp';
+// import NoteAppContext from '../NoteAppCustomHooks/components/NoteApp';
+import HooksSimpleApp from '../hooks-simple/components/HooksSimpleApp';
+import { Box } from '@material-ui/core';
 
 
 
@@ -25,9 +27,12 @@ const App = () => {
     // </div>
     <>
       <Header />
-      {/* <User /> */}
-      {/* <NoteApp /> */}
-      <NoteAppContext />
+        <Box  p={1}>
+          {/* <User /> */}
+          {/* <NoteApp /> */}
+          {/* <NoteAppContext /> */}
+          <HooksSimpleApp />
+        </Box>
       <Footer />
     </>
   );
