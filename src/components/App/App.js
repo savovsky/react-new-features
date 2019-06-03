@@ -27,7 +27,7 @@ const App = () => {
     // </div>
     <>
       <Header />
-        <Box  p={1}>
+        <Box  p={4}>
           {/* <User /> */}
           {/* <NoteApp /> */}
           {/* <NoteAppContext /> */}
