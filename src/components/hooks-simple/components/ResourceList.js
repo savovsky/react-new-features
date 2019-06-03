@@ -1,24 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Paper, Typography, Box } from '@material-ui/core';
-import Axios from 'axios';
+import useResources from '../hooks/useResources';
+
 
 const ResourceList = ({resource}) => {
-  const [items, setItems] = useState([]);
-
-  useEffect(() => {
-    Axios.get(`https://jsonplaceholder.typicode.com/${resource}`)
-      .then(
-        (res) => {
-          console.log(res);
-          setItems(res.data);
-        }
-      )
-      .catch(
-        (err) => {
-          console.log("Eho", err);
-        }
-      )
-  }, [resource]);
+  const items = useResources(resource);
 
   return (
     <Paper>
@@ -32,6 +18,6 @@ const ResourceList = ({resource}) => {
       </Box>
     </Paper>
   );
-}
+};
 
 export default ResourceList;

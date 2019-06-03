@@ -8,7 +8,7 @@ import Footer from '../Footer/Footer';
 // import User from '../User/User';
 // import NoteApp from '../NoteApp/NoteApp';
 // import NoteAppContext from '../NoteAppCustomHooks/components/NoteApp';
-import HooksSimpleApp from '../hooks-simple/components/HooksSimpleApp';
+// import HooksSimpleApp from '../hooks-simple/components/HooksSimpleApp';
 import { Box } from '@material-ui/core';
 
 
@@ -31,7 +31,7 @@ const App = () => {
           {/* <User /> */}
           {/* <NoteApp /> */}
           {/* <NoteAppContext /> */}
-          <HooksSimpleApp />
+          {/* <HooksSimpleApp /> */}
         </Box>
       <Footer />
     </>
